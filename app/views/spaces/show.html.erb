@@ -1,0 +1,46 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @space.name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @space.address %>
+</p>
+
+<p>
+  <strong>Hourly price:</strong>
+  <%= @space.hourly_price %>
+</p>
+
+<p>
+  <strong>Daily price:</strong>
+  <%= @space.daily_price %>
+</p>
+
+<p>
+  <strong>Square footage:</strong>
+  <%= @space.square_footage %>
+</p>
+
+<p>
+  <strong>Capacity:</strong>
+  <%= @space.capacity %>
+</p>
+
+<p>
+  <strong>Views count:</strong>
+  <%= @space.views_count %>
+</p>
+
+<p>
+  <strong>Primary photo css url small:</strong>
+  <%= @space.primary_photo_css_url_small %>
+</p>
+
+<% will_paginate @spaces %>
+
+<%= link_to 'Edit', edit_space_path(@space) %> |
+<%= link_to 'Back', spaces_path %>
